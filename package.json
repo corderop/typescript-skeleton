@@ -1,0 +1,26 @@
+{
+  "name": "typescript-skeleton",
+  "version": "0.0.0",
+  "description": "Skeleton for any typescript project",
+  "main": "index.ts",
+  "scripts": {
+    "start": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corderop/typescript-skeleton.git"
+  },
+  "keywords": [
+    "typescript",
+    "skeleton"
+  ],
+  "author": "corderop",
+  "bugs": {
+    "url": "https://github.com/corderop/typescript-skeleton/issues"
+  },
+  "homepage": "https://github.com/corderop/typescript-skeleton#readme",
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  }
+}
