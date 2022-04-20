@@ -10,7 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint --ext .ts .",
     "lint:fix": "eslint --ext .ts . --fix",
-    "format": "prettier --write \"**/*.+(js|ts|json)\""
+    "format": "prettier --check \"**/*.+(js|ts|json)\"",
+    "format:fix": "prettier --write \"**/*.+(js|ts|json)\"",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,7 @@
     "eslint": "^8.13.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.5.0",
+    "husky": "^7.0.4",
     "nodemon": "^2.0.15",
     "prettier": "^2.6.2",
     "ts-node": "^10.7.0",

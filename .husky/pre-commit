@@ -1,0 +1,28 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+LINE="\n---------------------------------------------------------\n"
+
+printf -- $LINE
+printf "🔍 Looking for staged files..."
+STAGED_FILES=$(git diff --name-only --cached -- '*.ts' '*.json' '*.js')
+printf " ✅"
+printf -- $LINE
+
+if [ -z "$STAGED_FILES" ]
+then
+    printf "📦 Not files found for linting. Exiting..."
+    printf -- $LINE
+    printf "\n"
+    exit 0
+fi
+
+printf "🎨 Checking format with prettier...\n\n"
+npx prettier --check $STAGED_FILES
+printf "\n✅ All checks passing"
+printf -- $LINE
+
+printf "💄 Checking linting with eslint...\n"
+npm run lint
+printf "✅ All checks passing"
+printf -- $LINE
