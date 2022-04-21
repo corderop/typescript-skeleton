@@ -1,1 +1,5 @@
-console.log("🎉 Welcome to typescript!")
+function sum(a: number, b: number): number {
+  return a + b
+}
+
+export default sum

@@ -2,4 +2,7 @@
 node_modules/
 
 # Compiled files
-dist/ 
+dist/
+
+# Tests
+coverage/
