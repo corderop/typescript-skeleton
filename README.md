@@ -12,11 +12,11 @@ This repository means to be a starting point for any typescript project. It cont
 Also, it contains some other branches that add optional configurations to this repo:
 
 - `vscode` - Configuration for VSCode
-    - Configuration to use prettier as formatter of typescript files and enabling format on save.
-    - Run and debug configuration:
-        - Attach debugger to running node instance
-        - Run debugger with nodemon
-        - Run tests for the current editing file
+  - Configuration to use prettier as formatter of typescript files and enabling format on save.
+  - Run and debug configuration:
+    - Attach debugger to running node instance
+    - Run debugger with nodemon
+    - Run tests for the current editing file
 
 ## Install
 
@@ -24,12 +24,6 @@ To install you simply have to run the `npm` install command. This has not been t
 
 ```bash
 npm install
-```
-
-Then, if you want to have the pre-commit script configured, you must run the `prepare` script
-
-```bash
-npm run prepare
 ```
 
 Now the repo should work fine.
