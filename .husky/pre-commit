@@ -5,7 +5,7 @@ LINE="\n---------------------------------------------------------\n"
 
 printf -- $LINE
 printf "🔍 Looking for staged files..."
-STAGED_FILES=$(git diff --name-only --cached -- '*.ts' '*.json' '*.js')
+STAGED_FILES=$(git diff --name-only --cached --diff-filter=ACM -- '*.ts' '*.json' '*.js')
 printf " ✅"
 printf -- $LINE
 
